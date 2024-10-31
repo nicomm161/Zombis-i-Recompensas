@@ -1,71 +1,69 @@
 
+/* Estils generals per al cos de la pàgina */
 body {
-    font-family: 'Arial'; /* Aplica la font Arial al text dins el body */
-    display: flex; /* Utilitza flexbox per al disseny del body */
-    flex-direction: column; /* Els elements es col·locaran en una columna */
-    align-items: center; /* Centra els elements */
-    background-color: #2c3e50; /* Estableix el color de fons a un to fosc */
-    color: white; /* Estableix el color del text a blanc */
-    margin: 0; /* Elimina el marge predeterminat del body */
-    padding: 20px; /* Afegeix 20px al seu voltant */
+    font-family: 'Creepster', sans-serif; /* Font estil Halloween */
+    margin: 0;
+    padding: 20px;
+    background: #1c1c1c; /* Fons fosc */
+    color: #f1f1f1; /* Text blanc */
+    text-align: center;
 }
 
+/* Estils per a l'encapçalament */
 h1 {
-    text-align: center; /* Centra el text del títol */
-    margin: 30px 0; /* Afegeix un marge superior e inferior de 30px */
+    color: #ff7518; /* Taronja fosc per al títol */
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px #000; /* Ombra per a un efecte esgarrifós */
 }
 
-#direccio, #estat {
-    display: flex; /* Utilitza flexbox per als controls direccionals i l'estat */
-    justify-content: center; /* Centra els elements */
-    align-items: center; /* Centra els elements */
-    margin-top: 10px; /* Afegeix una separacio a dalt de 10px */
+/* Taula del joc */
+#tabla {
+    margin: 20px auto;
+    border-collapse: collapse; /* Col·lapsar els marges de les cel·les */
+}
+
+#tabla td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333; /* Vores fosques */
+    background-color: #2d2d2d; /* Fons fosc en les cel·les */
+    transition: background 0.3s ease; /* Suau transició per als canvis de color */
+}
+
+/* Estils per als controls direccionals */
+#direccio {
+    margin: 20px;
 }
 
 #direccio button {
-    background-color: #e74c3c; /* Estableix el color de fons dels botons */
-    color: white; /* Estableix el color del text dels botons */
-    border: none; /* Elimina les vores dels botons */
-    padding: 10px; /* Afegeix 10 px al seu voltant de separacio */
-    margin: 5px; /* Afegeix una separacio de 5px al voltant dels botons */
-    border-radius: 5px; /* Arrodoneix les cantonades dels botons */
-    cursor: pointer; /* Canvia el cursor al passar-lo pel botó */
+    background: #ff7518; /* Taronja per als botons */
+    color: #1c1c1c; /* Text fosc */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease; /* Transició per color i fons */
+    font-family: 'Creepster', sans-serif; /* Font de Halloween */
 }
 
 #direccio button:hover {
-    background-color: #c0392b; /* Canvia el color de fons quan es passa el cursor sobre el botó */
+    background: #b22222; /* Vermell fosc al passar el cursor */
+    color: #fff;
 }
 
-#tabla {
-    display: table; /* Defineix la taula com un element de taula */
-    border-collapse: collapse; /* Col·lapsa les vores de la taula */
-    margin: 20px; /* Afegeix 20 px de separacio al seu voltant */
-}
-
-.fila {
-    display: table-row; /* Defineix les files de la taula */
-}
-
-span {
-    display: table-cell; /* Defineix les cel·les de la taula */
-    width: 30px; /* Amplada de les cel·les a 30px */
-    height: 30px; /* Altura de les cel·les a 30px */
-    text-align: center; /* Centra el text dins les cel·les */
-    border: 1px solid #ddd; /* Afegeix una vora de 1px i color gris clar a les cel·les */
-    background-color: #95a5a6; /* Estableix el color de fons de les cel·les */
-}
-
-span.jugador {
-    background-color: #2980b9; /* Estableix el color de fons per la cel·la del jugador */
-}
-
-span.visitada {
-    background-color: #7f8c8d; /* Estableix el color de fons per les cel·les visitades */
-}
-
+/* Estils per a l'estat del joc */
 #estat {
-    background-color: #34495e; /* Estableix el color de fons per l'estat */
-    padding: 10px; /* Afegeix una separacio de 10px dins l'estat */
-    border-radius: 5px; /* Arrodoneix les cantonades del contenidor de l'estat */
+    margin: 20px auto;
+    background: #333; /* Fons fosc */
+    color: #ff7518; /* Taronja per al text */
+    padding: 15px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Ombra fosca */
+    font-family: 'Creepster', sans-serif;
 }
+
+
 
